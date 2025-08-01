@@ -19,30 +19,30 @@ section {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   padding-bottom: 0.5em;
 }
 
 footer p {
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
 }
 
 main p {
-  font-size: 1.7em;
+  font-size: 1.2em;
   max-width: 600px;
 }
 
 footer {
   background-color: white;
-  padding: 20px;
+  padding: 0.5em;
   text-align: right;
 }
 
 #titulo_banner {
   text-align: center;
   color: black;
-  font-size: 3em;
+  font-size: 2em;
   padding: 10px;
 }
 
@@ -69,7 +69,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 200px;
 }
 
 .logo {
