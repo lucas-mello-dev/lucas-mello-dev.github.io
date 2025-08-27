@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="eS">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
     <title>Lucas Mello | Portafolio Web</title>
   </head>
   <body>
     <header>
-      <h1>Mi Portafolio Web</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="titulo-nav"
+            >Mi Portafolio</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#bienvenida">Bienvenida</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <div class="contenedor-general">
@@ -21,7 +63,7 @@
         </div>
         <div class="contenedor-informacion">
           <div class="contenedor-informacion-top">
-            <h1 class="titulo-contenedor-top">
+            <h1 class="titulo-contenedor-top" id="bienvenida">
               Bienvenido a mi Portafolio Web
             </h1>
           </div>
@@ -45,7 +87,9 @@
           />
         </div>
         <div class="contenedor-informacion">
-          <div class="contenedor-informacion-top"><h1>Sobre mí</h1></div>
+          <div class="contenedor-informacion-top">
+            <h1 class="titulo-contenedor-top" id="sobre-mi">Sobre mí</h1>
+          </div>
           <div class="contenedor-informacion-bottom">
             <p>
               Soy <strong>Lucas Mello</strong>, estudiante de
@@ -54,6 +98,41 @@
               jóvenes de 18 a 30 años de todo el país en el área de las
               tecnologías de la información.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor-informacion">
+        <div
+          class="contenedor-informacion-top"
+          id="contenedor-titulo-proyectos"
+        >
+          <h1 class="titulo-contenedor-top" id="proyectos">Proyectos</h1>
+        </div>
+        <div class="contenedor-informacion-bottom proyectos-lista">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/1200x/88/d6/11/88d611f978deae738c4c452a9690ee09.jpg"
+              alt="Proyecto 1"
+            />
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto.</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/1200x/88/d6/11/88d611f978deae738c4c452a9690ee09.jpg"
+              alt="Proyecto 2"
+            />
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto.</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/1200x/88/d6/11/88d611f978deae738c4c452a9690ee09.jpg"
+              alt="Proyecto 2"
+            />
+            <h3>Proyecto 3</h3>
+            <p>Descripción del proyecto.</p>
           </div>
         </div>
       </div>
@@ -68,7 +147,9 @@
         </div>
         <div class="contenedor-informacion">
           <div class="contenedor-informacion-top">
-            <h1>Información de contacto</h1>
+            <h1 class="titulo-contenedor-top" id="contacto">
+              Información de contacto
+            </h1>
           </div>
           <div class="contenedor-informacion-bottom">
             <p>
@@ -93,6 +174,7 @@
                 src="https://static.vecteezy.com/system/resources/previews/022/613/021/non_2x/google-mail-gmail-icon-logo-symbol-free-png.png"
                 alt="Logo de Gmail"
                 class="logo"
+                id="logo-gmail"
               />
             </a>
 
